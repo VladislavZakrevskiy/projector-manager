@@ -1,0 +1,54 @@
+.root {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: var(--g-color-base-background);
+}
+
+.stage {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  background: #000;
+}
+
+/* 16:9 экран проектора; SVG-слой редактора и canvas делят один и тот же прямоугольник */
+.screen {
+  position: relative;
+  width: 100%;
+  max-width: calc(100vh * 16 / 9);
+  aspect-ratio: 16 / 9;
+}
+
+.view {
+  width: 100%;
+  height: 100%;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 320px;
+  padding: 16px;
+  overflow: auto;
+  border-left: 1px solid var(--g-color-line-generic);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.hint {
+  line-height: 1.5;
+}

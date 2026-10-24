@@ -1,0 +1,33 @@
+{
+  "name": "projector-manager",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "typecheck": "tsc --noEmit",
+    "test": "rstest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@gravity-ui/uikit": "^8.0.0",
+    "@tanstack/react-router": "^1.170.46",
+    "effector": "^23.4.4",
+    "effector-react": "^23.3.0",
+    "patronum": "^2.3.0",
+    "pixi.js": "^8.22.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@rsbuild/core": "^2.2.14",
+    "@rsbuild/plugin-react": "^2.1.1",
+    "@rstest/core": "^0.12.4",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^7.0.2"
+  }
+}

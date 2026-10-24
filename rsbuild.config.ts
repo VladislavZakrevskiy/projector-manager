@@ -1,0 +1,15 @@
+import { fileURLToPath } from 'node:url';
+
+import { defineConfig } from '@rsbuild/core';
+import { pluginReact } from '@rsbuild/plugin-react';
+
+export default defineConfig({
+  plugins: [pluginReact()],
+  source: {
+    entry: { index: './src/app/index.tsx' },
+  },
+  resolve: {
+    alias: { '~': fileURLToPath(new URL('./src', import.meta.url)) },
+  },
+  html: { title: 'Projector Manager' },
+});

@@ -1,0 +1,32 @@
+.root {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: default;
+}
+
+.drawing {
+  cursor: crosshair;
+}
+
+.selectedOutline {
+  fill: none;
+  stroke: #fc0;
+  stroke-width: 1.5;
+}
+
+.handle {
+  fill: #fc0;
+}
+
+.draftLine {
+  fill: none;
+  stroke: #0f8;
+  stroke-width: 2;
+}
+
+.draftHandle {
+  fill: #0f8;
+}

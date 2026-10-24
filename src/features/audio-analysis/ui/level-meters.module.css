@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  gap: 4px;
+  height: 28px;
+}
+
+.bar {
+  display: flex;
+  align-items: flex-end;
+  width: 10px;
+  background: var(--g-color-base-generic);
+  border-radius: 2px;
+}
+
+.fill {
+  width: 100%;
+  background: var(--g-color-base-brand);
+  border-radius: 2px;
+}
